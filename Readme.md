@@ -4,20 +4,22 @@ Build Restful CRUD API for a simple Note-Taking application using Spring Boot, M
 
 ## Requirements
 
-1. Java - 1.8.x
+1. Java - 1.8.x or higher
 
-2. Maven - 3.x.x
+2. Maven - 3.x.x or higher
 
-3. Mysql - 5.x.x
+3. Mysql - 5.x.x or higher
 
 ## Steps to Setup
 
 **1. Clone the application**
 
-```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
-```
+Original source:
+https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
 
+```bash
+git clone https://github.com/amoncholiaccenture/frutappbe.git
+```
 **2. Create Mysql database**
 ```bash
 create database notes_app
@@ -32,7 +34,7 @@ create database notes_app
 **4. Build and run the app using maven**
 
 ```bash
-mvn package
+mvn package -DskipTests 
 java -jar target/easy-notes-1.0.0.jar
 ```
 
