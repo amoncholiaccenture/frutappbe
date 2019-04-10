@@ -21,15 +21,13 @@ https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
 git clone https://github.com/amoncholiaccenture/frutappbe.git
 ```
 **2. Create Mysql database**
-```bash
-create database notes_app
-```
+You should download the SQL file from the Team's folder and execute it on SQL Workbench
 
 **3. Change mysql username and password as per your installation**
 
 + open `src/main/resources/application.properties`
 
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
++ The `spring.datasource.username` and `spring.datasource.password` should be: "username"/"MyNewPassword"
 
 **4. Build and run the app using maven**
 
