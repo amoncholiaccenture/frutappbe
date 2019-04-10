@@ -13,7 +13,7 @@ import java.util.Date;
  * Created by rajeevkumarsingh on 27/06/17.
  */
 @Entity
-@Table(name = "usuarios")
+@Table(name = "usuario")
 @EntityListeners(AuditingEntityListener.class)
 public class Usuarios {
     @Id
