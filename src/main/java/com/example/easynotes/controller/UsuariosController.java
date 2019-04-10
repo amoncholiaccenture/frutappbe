@@ -29,4 +29,10 @@ public class UsuariosController {
     public Usuarios createUsuario(@Valid @RequestBody Usuarios usuario) {
         return usuariosRepository.save(usuario);
     }
+
+    @GetMapping("/usuarios/{pk_usuario}")
+    public Usuarios getNoteById(@PathVariable(value = "pk_usuario") Long usuarioId) {
+        return usuariosRepository.findById(usuarioId)
+                .orElseThrow(() -> new ResourceNotFoundException("usuario", "pk_usuario", usuarioId));
+    }
 }
