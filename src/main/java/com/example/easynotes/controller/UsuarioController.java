@@ -27,17 +27,17 @@ public class UsuarioController {
     @Autowired
     UsuarioRepository usuarioRepository;
 
-    @GetMapping("/usuario")
+    @GetMapping("/usuarios")
     public List<Usuario> getAllUsuarios() {
         return usuarioRepository.findAll();
     }
 
-    @PostMapping("/usuario")
+    @PostMapping("/usuarios")
     public Usuario createUsuario(@Valid @RequestBody Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
 
-    @GetMapping("/usuarios/{str_email}/{str_password}")
+    @GetMapping("/usuario/{str_email}/{str_password}")
     public Boolean getNoteById(@PathVariable(value = "str_email") String email, @PathVariable(value = "str_password") String password) {
         TypedQuery<Usuario> query =
         em.createQuery("FROM Usuario WHERE str_email_usuario = :email AND str_pass_usuario = :password", Usuario.class);

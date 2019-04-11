@@ -52,7 +52,7 @@ The app defines following CRUD APIs.
     
     POST /u/usuarios
     
-    GET /u/usuarios/{email}/{password} -> Returns Boolean
+    GET /u/usuario/{email}/{password} -> Returns Boolean
     
     PUT /api/notes/{noteId}
     
