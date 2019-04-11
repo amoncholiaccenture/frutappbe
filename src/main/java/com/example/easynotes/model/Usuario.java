@@ -15,7 +15,7 @@ import java.util.Date;
 @Entity
 @Table(name = "usuario")
 @EntityListeners(AuditingEntityListener.class)
-public class Usuarios {
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pk_usuario;
